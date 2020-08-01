@@ -68,18 +68,54 @@ html, body {
 }
 
 .right a img {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
 }
 
 .right input[type=text] {
     width: 110px;
-    height: 26px;
+    height: 22px;
     outline: 0;
 }
 
 .right input[type=image] {
     border: 0;
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
+}
+
+.topo-title {
+    height: 95px;
+    color: #000;
+}
+
+.topo-title .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo-title .logo {
+    width: 230px;
+    height: 100%;
+}
+
+.topo-title .logo a {
+    text-decoration: none;
+}
+
+.topo-title .logo a span {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    font-family: 'Oswald';
+}
+
+.topo-title .banner {
+    width: 650px;
+    height: 80px;
+    background-color: red;
+    background-image: url('../images/top-banner.png');
+    background-size: contain;
 }
