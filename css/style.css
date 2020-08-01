@@ -240,6 +240,7 @@ section {
 .slideshow {
     height: 365px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .slide-bolinhas {
@@ -260,9 +261,10 @@ section {
 }
 
 .slideshow-area {
+    width: calc(100% * 9);
     height: 365px;
     background-color: #ebebeb;
-    transition: all .5s linear;
+    transition: all .7s linear;
 }
 
 .slide {
@@ -273,39 +275,39 @@ section {
     background-size: 100% 100%;
 }
 
-.slide:nth-of-type(1) {
+a:nth-of-type(1) .slide {
     background-image: url('../images/intro1.jpg');
 }
 
-.slide:nth-of-type(2) {
+a:nth-of-type(2) .slide {
     background-image: url('../images/intro2.jpg');
 }
 
-.slide:nth-of-type(3) {
+a:nth-of-type(3) .slide {
     background-image: url('../images/intro4.jpg');
 }
 
-.slide:nth-of-type(4) {
+a:nth-of-type(4) .slide {
     background-image: url('../images/intro5.jpg');
 }
 
-.slide:nth-of-type(5) {
+a:nth-of-type(5) .slide {
     background-image: url('../images/adult-beautiful-beautyjpg.jpg');
 }
 
-.slide:nth-of-type(6) {
+a:nth-of-type(6) .slide {
     background-image: url('../images/art-bass-guitar-classic.jpg');
 }
 
-.slide:nth-of-type(7) {
+a:nth-of-type(7) .slide {
     background-image: url('../images/attraction-blonde-blur.jpg');
 }
 
-.slide:nth-of-type(8) {
+a:nth-of-type(8) .slide {
     background-image: url('../images/black-and-white-blur-bubbles.jpg');
 }
 
-.slide:nth-of-type(9) {
+a:nth-of-type(9) .slide {
     background-image: url('../images/beautiful-beauty-close-up.jpg');
 }
 
@@ -328,6 +330,78 @@ section {
     font-size: 15px;
     color: white;
     padding-top: 10px;
+}
+
+section > .widget {
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo .left {
+    width: 430px;
+}
+
+.left .noticia-item {
+    flex-direction: column;
+}
+
+.left .noticia-item figure {
+    width: 430px;
+    height: 222px;
+}
+
+.left .noticia-item figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.left .noticia-info {
+    margin-top: 12px;
+}
+
+.left .noticia-info h3 {
+    font-size: 20px;
+}
+
+.left .noticia-info p {
+    font-size: 15px;
+}
+
+.conteudo .right {
+    width: 320px;
+}
+
+.conteudo .right a, .conteudo .left a {
+    text-decoration: none;
+}
+
+.noticia-item {
+    margin-bottom: 14px;
+    display: flex;
+}
+
+.noticia-item figure img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.noticia-info {
+    margin-left: 6px;
+    color: black;
+}
+
+.noticia-info h3 {
+    font-size: 16px;
+}
+
+.noticia-info p {
+    font-size: 12px;
 }
 
 aside {
@@ -383,4 +457,42 @@ aside {
 
 .widget p span {
     text-align: justify !important;
+}
+
+footer {
+    width: 100%;
+    height: 66px;
+    background-color: #f80000;
+}
+
+footer .container {
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid orange;
+}
+
+footer .left {
+    color: white;
+    font-size: 13px;
+}
+
+footer .left a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer ul li {
+    padding: 0 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
 }
