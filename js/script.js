@@ -1,32 +1,48 @@
 let slide_item = 0
 
 window.onload = () => {
-    setInterval(passarSlide, 2000)
+    document.getElementsByClassName('bolinha')[0].style.backgroundColor = '#f80000'
+
+    setInterval(passarSlide, 4000)
 
     let slide_width = document.getElementById('slideshow').offsetWidth
     let objs = document.getElementsByClassName('slide')
 
-    for (let i = 0; i < objs.length; i++) {
-        objs[i].style.width = slide_width + 'px'
+    for (let item of objs) {
+        item.style.width = slide_width + 'px'
     }
 }
 
 function passarSlide() {
     let slide_width = document.getElementById('slideshow').offsetWidth
 
-    if (slide_item >= 3) {
+    if (slide_item >= 8) {
         slide_item = 0
     } else {
         slide_item++
     }
 
-    document.getElementsByClassName('slideshow-area')[0].style.marginLeft = '-' + (slide_item * slide_width)
+    document.getElementsByClassName('slideshow-area')[0].style.marginLeft = '-' + (slide_width * slide_item) + 'px'
+    let objs = document.getElementsByClassName('bolinha')
+
+    for (let item of objs) {
+        item.style.backgroundColor = '#ebebeb'
+    }
+
+    document.getElementsByClassName('bolinha')[slide_item].style.backgroundColor = '#f80000'
 }
 
 function mudarSlide(pos) {
     slide_item = pos
     let slide_width = document.getElementById('slideshow').offsetWidth
-    document.getElementsByClassName('slideshow-area')[0].style.marginLeft = '-' + (slide_item * slide_width)
+    document.getElementsByClassName('slideshow-area')[0].style.marginLeft = '-' + (slide_width * slide_item) + 'px'
+    let objs = document.getElementsByClassName('bolinha')
+
+    for (let item of objs) {
+        item.style.backgroundColor = '#ebebeb'
+    }
+
+    document.getElementsByClassName('bolinha')[pos].style.backgroundColor = '#f80000'
 }
 
 function toggleMenu() {

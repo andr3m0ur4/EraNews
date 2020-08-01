@@ -239,13 +239,30 @@ section {
 
 .slideshow {
     height: 365px;
-    background-color: blueviolet;
     overflow: hidden;
+}
+
+.slide-bolinhas {
+    position: absolute;
+    width: 225px;
+    height: 20px;
+    margin: 5px;
+}
+
+.bolinha {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    background-color: #ebebeb;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .slideshow-area {
     height: 365px;
-    background-color: coral;
+    background-color: #ebebeb;
+    transition: all .5s linear;
 }
 
 .slide {
@@ -253,7 +270,7 @@ section {
     float: left;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 .slide:nth-of-type(1) {
@@ -264,12 +281,53 @@ section {
     background-image: url('../images/intro2.jpg');
 }
 
-.slide:nth-of-type(4) {
+.slide:nth-of-type(3) {
     background-image: url('../images/intro4.jpg');
 }
 
-.slide:nth-of-type(5) {
+.slide:nth-of-type(4) {
     background-image: url('../images/intro5.jpg');
+}
+
+.slide:nth-of-type(5) {
+    background-image: url('../images/adult-beautiful-beautyjpg.jpg');
+}
+
+.slide:nth-of-type(6) {
+    background-image: url('../images/art-bass-guitar-classic.jpg');
+}
+
+.slide:nth-of-type(7) {
+    background-image: url('../images/attraction-blonde-blur.jpg');
+}
+
+.slide:nth-of-type(8) {
+    background-image: url('../images/black-and-white-blur-bubbles.jpg');
+}
+
+.slide:nth-of-type(9) {
+    background-image: url('../images/beautiful-beauty-close-up.jpg');
+}
+
+.slide-info {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('../images/dots-overlay.png');
+    background-repeat: repeat;
+    margin-top: calc(365px - 90px);
+    padding-left: 20px;
+}
+
+.slide-info h3 {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.slide-info h4 {
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
 }
 
 aside {
