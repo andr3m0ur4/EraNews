@@ -233,10 +233,43 @@ main .container {
 }
 
 section {
-    background-color: brown;
     width: 100%;
     max-width: 783px;
-    min-height: 200px;
+}
+
+.slideshow {
+    height: 365px;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.slideshow-area {
+    height: 365px;
+    background-color: coral;
+}
+
+.slide {
+    height: 365px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url('../images/intro1.jpg');
+}
+
+.slide:nth-of-type(2) {
+    background-image: url('../images/intro2.jpg');
+}
+
+.slide:nth-of-type(4) {
+    background-image: url('../images/intro4.jpg');
+}
+
+.slide:nth-of-type(5) {
+    background-image: url('../images/intro5.jpg');
 }
 
 aside {
