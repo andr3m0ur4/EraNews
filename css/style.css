@@ -1,17 +1,17 @@
+/***********************************************************************************/
+/***********************    Configurações Gerais    ********************************/
+/***********************************************************************************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 html, body {
     height: 100%;
-}
-
-.topo {
-    height: 30px;
-    background-color: #000;
-    opacity: 0.8;
 }
 
 .container {
@@ -19,4 +19,46 @@ html, body {
     max-width: 1080px;
     height: 100%;
     margin: auto;
+    display: flex;
+}
+
+/***********************************************************************************/
+/***********************    Cabeçalho   ********************************************/
+/***********************************************************************************/
+
+.topo {
+    height: 40px;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.topo .left {
+    width: 50%;
+    height: 100%;
+}
+
+.topo .right {
+    width: 50%;
+    height: 100%;
+}
+
+.left ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.left ul li {
+    padding: 0 8px;
+}
+
+.left ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left ul li a.ativo {
+    color: #f80000;
 }
