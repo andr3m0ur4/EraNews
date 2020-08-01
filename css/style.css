@@ -30,6 +30,7 @@ html, body {
     height: 40px;
     background-color: #000;
     opacity: 0.8;
+    color: white;
 }
 
 .topo .left {
@@ -40,6 +41,9 @@ html, body {
 .topo .right {
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .left ul {
@@ -61,4 +65,21 @@ html, body {
 
 .left ul li a.ativo {
     color: #f80000;
+}
+
+.right a img {
+    width: 26px;
+    height: 26px;
+}
+
+.right input[type=text] {
+    width: 110px;
+    height: 26px;
+    outline: 0;
+}
+
+.right input[type=image] {
+    border: 0;
+    width: 26px;
+    height: 26px;
 }
