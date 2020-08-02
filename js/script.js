@@ -11,6 +11,18 @@ window.onload = () => {
     for (let item of objs) {
         item.style.width = slide_width + 'px'
     }
+
+    document.getElementById('toggle-menu').onclick = () => {
+        toggleMenu()
+    }
+
+    objs = document.getElementsByClassName('bolinha')
+
+    for (let i = 0; i < objs.length; i++) {
+        objs[i].onclick = () => {
+            mudarSlide(i)
+        }
+    }
 }
 
 function passarSlide() {
@@ -49,7 +61,7 @@ function toggleMenu() {
     let menu = document.getElementById('menu')
 
     if (menu.style.display == 'none' || menu.style.display == '') {
-        menu.style.display = 'block'
+        menu.style.display = 'flex'
     } else {
         menu.style.display = 'none'
     }

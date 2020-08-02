@@ -137,6 +137,10 @@ nav .container {
     align-items: center;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -633,8 +637,53 @@ footer ul li a {
         justify-content: center;
     }
 
-    nav ul {
+    nav .container {
+        align-items: flex-start;
+    }
+
+    .menu-mobile {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    
+    nav .container > ul {
+        position: static;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
         display: none;
+        z-index: 2;
+    }
+    
+    nav .container > ul > li {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    nav ul li:hover nav {
+        display: block;
+    }
+    
+    nav ul li a {
+        font-size: 17px;
+        color: rgb(221, 221, 221);
+        padding-left: 10px;
+    }
+    
+    nav ul li img {
+        display: none;
+    }
+
+    li nav {
+        position: static;
+        display: block;
+    }
+    
+    li nav ul {
+        background-color: transparent;
     }
 
     .ultimas-noticias {
