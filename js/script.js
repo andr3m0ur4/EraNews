@@ -60,7 +60,7 @@ function mudarSlide(pos) {
     document.getElementsByClassName('bolinha')[pos].style.backgroundColor = '#f80000'
 }
 
-// Função para habilitar ou desabilitar o menu
+// Função para exibir ou ocultar o menu
 function toggleMenu() {
     let menu = document.getElementById('menu')
 
