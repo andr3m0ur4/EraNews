@@ -26,6 +26,7 @@ window.onload = () => {
     }
 }
 
+// Função para passar o slide
 function passarSlide() {
     let slide_width = document.getElementById('slideshow').offsetWidth
 
@@ -45,6 +46,7 @@ function passarSlide() {
     document.getElementsByClassName('bolinha')[slide_item].style.backgroundColor = '#f80000'
 }
 
+// Função para mudar o slide de acordo com click do usuário
 function mudarSlide(pos) {
     slide_item = pos
     let slide_width = document.getElementById('slideshow').offsetWidth
@@ -58,6 +60,7 @@ function mudarSlide(pos) {
     document.getElementsByClassName('bolinha')[pos].style.backgroundColor = '#f80000'
 }
 
+// Função para habilitar ou desabilitar o menu
 function toggleMenu() {
     let menu = document.getElementById('menu')
 
