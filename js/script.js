@@ -1,3 +1,4 @@
+// Inicializando variável com valor zero
 let slide_item = 0
 
 window.onload = () => {
